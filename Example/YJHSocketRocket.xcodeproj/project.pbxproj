@@ -30,8 +30,8 @@
 /* Begin PBXFileReference section */
 		0647C2575474988D7A888BE7 /* Pods_YJHSocketRocket_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJHSocketRocket_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20D6AA146D37ED2AA5A3C0FD /* Pods-YJHSocketRocket_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJHSocketRocket_Example.debug.xcconfig"; path = "Target Support Files/Pods-YJHSocketRocket_Example/Pods-YJHSocketRocket_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4175B45CEBE0646E5B6B2F5D /* YJHSocketRocket.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YJHSocketRocket.podspec; path = ../YJHSocketRocket.podspec; sourceTree = "<group>"; };
-		43DF722120E283BFB64E7A11 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4175B45CEBE0646E5B6B2F5D /* YJHSocketRocket.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YJHSocketRocket.podspec; path = ../YJHSocketRocket.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		43DF722120E283BFB64E7A11 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5452FFCFCBF177AD4EAE7DB1 /* Pods-YJHSocketRocket_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJHSocketRocket_Tests.release.xcconfig"; path = "Target Support Files/Pods-YJHSocketRocket_Tests/Pods-YJHSocketRocket_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5ECB3544CE6D04DB1DDEC658 /* Pods-YJHSocketRocket_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJHSocketRocket_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YJHSocketRocket_Tests/Pods-YJHSocketRocket_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YJHSocketRocket_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJHSocketRocket_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,7 +45,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		61DBEF41D6640652F13F0EB6 /* Pods-YJHSocketRocket_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJHSocketRocket_Example.release.xcconfig"; path = "Target Support Files/Pods-YJHSocketRocket_Example/Pods-YJHSocketRocket_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D63C161E329805F5083EE2B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D63C161E329805F5083EE2B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		ED7DBBEEDCA6243FDAD9DBB1 /* Pods_YJHSocketRocket_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJHSocketRocket_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				5ECB3544CE6D04DB1DDEC658 /* Pods-YJHSocketRocket_Tests.debug.xcconfig */,
 				5452FFCFCBF177AD4EAE7DB1 /* Pods-YJHSocketRocket_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -498,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YJHSocketRocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -513,6 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YJHSocketRocket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -535,6 +537,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -553,6 +556,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
